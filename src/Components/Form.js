@@ -23,8 +23,10 @@ export default class Form extends Component {
             'Content-Type': 'text/plain'
             },
             body: {
+                go: 'commit',
                 username: this.state.email,
-                password: this.state.password
+                password: this.state.password,
+                
             }
         }).then(
             res => console.table(res)
